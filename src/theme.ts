@@ -1,3 +1,7 @@
 export const theme = {
-  bgColor: '#090909',
+  colors: {
+    bg: '#090909',
+    bodyText: '#A8A8A8',
+    heading: '#FFFFFF',
+  },
 };

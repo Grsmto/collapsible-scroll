@@ -13,7 +13,10 @@ import { ProfileDetails } from './src/views/ProfileDetails';
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle={'light-content'} backgroundColor={'theme.bgColor'} />
+      <StatusBar
+        barStyle={'light-content'}
+        backgroundColor={'theme.colors.bgColor'}
+      />
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <ProfileDetails />
@@ -24,7 +27,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.bgColor,
+    backgroundColor: theme.colors.bg,
   },
 });
 

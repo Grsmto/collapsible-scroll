@@ -7,6 +7,7 @@ import Animated, {
   Easing,
   withDelay,
 } from 'react-native-reanimated';
+import { theme } from '../../theme';
 
 const headerHeight = 63;
 
@@ -73,6 +74,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: '600',
-    color: 'white',
+    color: theme.colors.heading,
   },
 });

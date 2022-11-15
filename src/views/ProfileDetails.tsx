@@ -12,6 +12,7 @@ import { Button } from '../components/Button';
 import { Section } from '../components/Section';
 import { Input } from '../components/Input';
 import { Form } from '../components/Form';
+import { theme } from '../theme';
 
 export const ProfileDetails = () => {
   const {
@@ -124,7 +125,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     textAlign: 'center',
-    color: '#A8A8A8',
+    color: theme.colors.bodyText,
   },
   sectionTitle: {
     fontSize: 24,

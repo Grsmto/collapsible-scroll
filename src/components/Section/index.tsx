@@ -4,6 +4,7 @@ import Animated, {
   useAnimatedScrollHandler,
   useSharedValue,
 } from 'react-native-reanimated';
+import { theme } from '../../theme';
 import { Header } from '../Header';
 
 export const Section: React.FC<
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
     marginBottom: 18,
     fontSize: 24,
     fontWeight: '600',
-    color: 'white',
+    color: theme.colors.heading,
   },
   subtitle: {
     textAlign: 'center',
